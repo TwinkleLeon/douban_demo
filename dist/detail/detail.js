@@ -1,0 +1,1 @@
+angular.module("detail",[]).controller("detailCtrl",["$scope","Jsonp","$routeParams",function(o,a,l){o.isShow=!0,a.jsonp({url:"http://api.douban.com//v2/movie/subject/"+l.id,callback:function(a){o.data=a,o.isShow=!1,o.$apply()}})}]);

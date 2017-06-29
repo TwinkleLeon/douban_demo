@@ -1,0 +1,1 @@
+!function(e){var i=e.module("moviecat",["ngRoute","home","movieList","in","detail"]);i.config(["$locationProvider",function(e){e.hashPrefix("")}]),i.config(["$routeProvider",function(e){e.when("/home",{templateUrl:"./home/home.html"}).when("/in/:page?",{templateUrl:"./in/in.html"}).when("/:id",{templateUrl:"./detail/detail.html"}).when("/",{redirectTo:"/home"})}])}(angular);
